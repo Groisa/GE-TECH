@@ -11,16 +11,6 @@ interface Props {
 }
 const SideMenu: React.FC<PropsMenu> = ({ setShow, show, timerShow }) => {
     const handleClose = () => {
-        const elemente = document.querySelector('#teste')
-        if (elemente) {
-            elemente.classList.add('animate__animated', 'animate__bounceOutLeft')
-        }
-        setTimeout(() => {
-            if (elemente) {
-                elemente.classList.remove('animate__animated', 'animate__bounceOutLeft')
-            }
-        }, 1000)
-        console.log('iuu')
         if (setShow) {
             setShow({ show: false, timerShow: false });
         }
